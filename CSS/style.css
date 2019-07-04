@@ -1,0 +1,189 @@
+@font-face{
+    font-family: futuraMdBt;
+    src: url('fonts/futura/futura_medium_bt-webfont.woff');
+}
+
+@font-face{
+    font-family: futuraLight;
+    src: url('fonts/futura/futura_light_font.ttf');
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	margin: 0;
+	font-family: futuraMdBt, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 30pt;
+	resize: auto;
+	color: #008D36;
+}
+
+h2{
+	font-size: 24pt;
+	resize: auto; 
+}
+h3{
+	color: #008D36;
+}
+
+p{
+	font-family: futuraLight, Helvetica;
+	font-size: 14pt;
+	resize: auto;
+}
+
+p b{
+	color: #008D36;
+}
+
+nav { /*menu volledige lay out */
+	background-color: white;
+    display: block;
+    width: 100%;
+    word-spacing: 20px;
+    padding: 0px;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    font-size: 1.2em;
+    
+ }
+
+ nav img{ /* opmaak logo */
+ 	margin-left: 10px;
+ 	margin-top: 15px;
+ }
+
+nav ul{ /* opmaak lijst geheel*/
+	width: 50%;
+    height: 50px;
+    float: right;
+	}
+
+nav ul li { /* opmaak lijst items (de menu namen, maar nog niet de links) */
+    display: inline-block; 
+    padding: 0;
+    margin-top: 10px;
+    word-spacing: 0px;
+    text-align: right;
+   }
+
+ nav ul li a { /* opmaak linkitems in menu */
+    color: #008D36;
+    text-decoration: none;
+}
+
+nav ul li a:visited{
+	text-decoration: underline;
+}
+
+nav ul li a:hover{
+	text-decoration:underline;
+}
+
+nav ul li a:active{
+	text-decoration: underline;
+}
+
+.overmij, #mijnwerk{
+	display: flex;
+	width: 100%;
+	margin-top: 15%;
+	text-align: center;
+}
+
+/*.workicons img{
+	display: block;
+	margin: auto;
+
+}*/
+
+.sylvia {
+	display: flex; 
+	width: 400px;
+	height: 80%;
+
+
+	text-align: justify;
+
+}
+
+.fotozelf{
+	display: flex;
+	width: 28%;
+
+	margin-top: 20%;
+	/*border: solid 3px black;*/
+	float: left;
+}
+
+.werkplek {
+	display: flex;
+	width: 25%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 20%;
+	/*border: solid 3px black;*/
+	float: left;
+	text-align: justify;
+}
+
+
+.imperium, .robotica  {
+	display: flex;
+	width: 49%;
+	margin-top: 20%;
+	margin-bottom: 20%;
+	/*border: solid 3px black;*/
+	float: left;
+	cursor: pointer;
+}
+
+
+
+
+
+div .werkplek h2 {
+	text-align: justify;
+}
+
+/*.footer{
+	display: block;
+	width: 100%
+}*/
+
+.mailmij, .socialemedia{
+	display: flex;
+	text-align: center;
+	width: 49%;
+	margin-top: 20%;
+	float: left;
+}
+
+#footer p a{
+	/*font-family: 'futuraLight';*/
+	text-decoration: none;
+	color: black;
+}
+
+#footer .mailmij p a:hover{
+	text-decoration: underline;
+}
+
+#footer .mailmij p a:visited{
+	color: #95C11F;
+}
+
+.copyright{
+	display: flex;
+	width: 100%;
+	margin-top: 20%;
+	text-align: center;
+}
+

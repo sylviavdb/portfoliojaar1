@@ -1,0 +1,158 @@
+@font-face{
+    font-family: 'futuraMdBt';
+    src: url('futura_medium_bt-webfont.woff');
+}
+
+@font-face{
+    font-family: 'futuraLight';
+    src: url('futura_light_bt-webfont.woff');
+}
+
+body{ /*opmaak gehele body, breedtte van 100% (zodat het op elk scherm 100% is) */
+	width: 100%;
+	margin: 0;
+	font-family: futuraMdBt, Helvetica;
+}
+
+h1 {
+	font-size: 30pt;
+	resize: auto;
+	color: #008D36;
+    text-align: center;
+}
+
+h2{ /*opmaak h2, lettergrootte van 24 pt */
+	font-size: 24pt;
+	resize: auto; 
+}
+h3{
+	color: #008D36; /*kleur van header 3, groen */
+}
+
+p{
+	font-family: futuraLight, Helvetica; /* lettertypen voor paragrafen */
+	font-size: 14pt;
+	resize: auto;
+}
+
+nav { /*menu volledige lay out */
+	background-color: white;
+    display: block;
+    width: 100%;
+    word-spacing: 20px;
+    padding: 0px;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    font-size: 1.2em;
+    
+ }
+
+ nav img{ /* opmaak logo */
+ 	margin-left: 5%;
+ 	margin-top: 1.5%;
+ }
+
+nav ul{ /* opmaak lijst geheel*/
+	width: 50%;
+    height: 50px;
+    float: right;
+}
+
+nav ul li { /* opmaak lijst items (de menu namen, maar nog niet de links) */
+    display: inline-block; 
+    padding: 0;
+    margin-top: 2%;
+    word-spacing: 0px;
+
+   }
+
+ nav ul li a { /* opmaak linkitems in menu */
+    color: #008D36;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+	text-decoration:underline;
+}
+
+
+#cv{
+    display: block;
+    width: 100%;
+    margin-top: 20%;
+    text-align: center;
+}
+
+
+.persinfo, .opleidingen, .ervaring, .software {
+    display:block;
+    
+    width: 35%;
+    height: 150pt;
+    margin-top: 20%;
+    
+    margin-left: 10%;
+    float: left;
+}
+
+.persinfo ul li{
+    list-style-type: none;
+    
+}
+
+.persinfo ul li a{
+    text-decoration: none;
+    color: black;    
+}
+
+.persinfo ul li a:hover{
+    text-decoration-line: underline;
+    color: #008D36;
+}
+
+.opleidingen ul li{
+    list-style-type: none;
+}
+
+
+.ervaring ul li{
+    list-style: none;
+}
+
+.software ul li {
+    list-style: none;
+}
+
+.software, .ervaring{
+    margin-bottom: 20%;
+}
+
+.mailmij, .socialemedia{
+    display: block;
+    text-align: center;
+    width: 49%;
+    margin-top: 20%;
+    float: left;
+}
+
+#footer .mailmij p a{
+    font-family: futuraLigh, Helvetica;
+    text-decoration: none;
+    color: black;
+}
+
+#footer .mailmij p a:hover{
+    text-decoration: underline;
+}
+
+#footer .mailmij p a:visited{
+    color: #95C11F;
+}
+
+.copyright{
+    display: inline-block;
+    width: 100%;
+    margin-top: 20%;
+    text-align: center;
+}
